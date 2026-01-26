@@ -36,13 +36,13 @@ function Navbar() {
             </div>
                {/* Mobile Menu */}
                {open && (
-                 <div className="md:hidden bg-gray-300 opacity-75 px-2 pt-2 pb-3 space-y-1">
-                    <a href="#home" className="block text-gray-800 hover:text-pink-600">Home</a>
-                    <a href="#about" className="block text-gray-800 hover:text-pink-600">About</a>
-                    <a href="#education" className="block text-gray-800 hover:text-pink-600">Education</a>
-                    <a href="#skills" className="block text-gray-800 hover:text-pink-600">Skills</a>
-                    <a href="#projects" className="block text-gray-800 hover:text-pink-600">Projects</a>
-                    <a href="#contact" className="block text-gray-800 hover:text-pink-600">Contact</a>
+                 <div className="md:hidden absolute right-0 top-full w-1/4 bg-gray-300 opacity-90 px-4 py-1 space-y-2 shadow-lg">
+                    <a href="#home" className="block text-gray-800 hover:text-green-600">Home</a>
+                    <a href="#about" className="block text-gray-800 hover:text-green-600">About</a>
+                    <a href="#education" className="block text-gray-800 hover:text-green-600">Education</a>
+                    <a href="#skills" className="block text-gray-800 hover:text-green-600">Skills</a>
+                    <a href="#projects" className="block text-gray-800 hover:text-green-600">Projects</a>
+                    <a href="#contact" className="block text-gray-800 hover:text-green-600">Contact</a>
                   </div>
                )}
         </nav>

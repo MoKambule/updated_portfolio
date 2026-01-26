@@ -10,7 +10,7 @@ function About() {
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-4">
         {/* About Me Text */}
         <div className="text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-100 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black pr-5 text-black">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-700 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black pr-5 text-black">
             Hi, I'm Mokgethwa Kambule
             </h1>
 
