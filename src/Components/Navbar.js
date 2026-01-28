@@ -1,8 +1,12 @@
 import React, {useState} from 'react';
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
+
+
 
 function Navbar() {
     const [open,setOpen] = useState(false);
+    
 
     return (
         <nav className="bg-gray-300 sticky top-0 z-50 shadow-md">
@@ -12,12 +16,10 @@ function Navbar() {
                         <h1 className="text-2xl font-bold text-gray-800">MLK.</h1>
                     </div>
             <div className="hidden md:flex space-x-8 items-center">
-            <a href="#home" className="text-gray-800 hover:text-green-600">Home</a>
-            <a href="#about" className="text-gray-800 hover:text-green-600">About</a>
-            <a href="#education" className="text-gray-800 hover:text-green-600">Education</a>
-            <a href="#skills" className="text-gray-800 hover:text-green-600">Skills</a>
-            <a href="#projects" className="text-gray-800 hover:text-green-600">Projects</a>
-            <a href="#contact" className="text-gray-800 hover:text-green-600">Contact</a>
+            <Link to="/" className="text-gray-800 hover:text-green-600">Home</Link>
+            <Link to="/about" className="text-gray-800 hover:text-green-600">About</Link>
+            <a href="#Certificates" className="text-gray-800 hover:text-green-600">Certificates</a>
+       
           </div>   
 
           {/* mobile menu button */}
@@ -35,16 +37,21 @@ function Navbar() {
                 </div>
             </div>
                {/* Mobile Menu */}
-               {open && (
-                 <div className="md:hidden absolute right-0 top-full w-1/4 bg-gray-300 opacity-90 px-4 py-1 space-y-2 shadow-lg">
-                    <a href="#home" className="block text-gray-800 hover:text-green-600">Home</a>
-                    <a href="#about" className="block text-gray-800 hover:text-green-600">About</a>
-                    <a href="#education" className="block text-gray-800 hover:text-green-600">Education</a>
-                    <a href="#skills" className="block text-gray-800 hover:text-green-600">Skills</a>
-                    <a href="#projects" className="block text-gray-800 hover:text-green-600">Projects</a>
-                    <a href="#contact" className="block text-gray-800 hover:text-green-600">Contact</a>
-                  </div>
-               )}
+{open && (
+  <div className="md:hidden absolute right-0 top-full w-1/4 bg-gray-300 opacity-90 px-4 py-1 space-y-2 shadow-lg">
+    <Link to="/" onClick={() => setOpen(false)} className="block text-gray-800 hover:text-green-600">
+      Home
+    </Link>
+    <Link to="/about" onClick={() => setOpen(false)} className="block text-gray-800 hover:text-green-600">
+      About Me
+    </Link>
+    <a href="#Certificates" onClick={() => setOpen(false)} className="block text-gray-800 hover:text-green-600">
+      Certificates
+    </a>
+  
+  </div>
+)}
+
         </nav>
 
     );
