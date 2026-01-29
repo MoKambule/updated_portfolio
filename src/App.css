@@ -53,5 +53,27 @@
              blink-caret 0.75s step-end infinite;
   animation-fill-mode: both;
   
+  .cards-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cards-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  min-width: 100%; /* Each card takes full width */
+  flex-shrink: 0;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background: #fff;
+  border-radius: 8px;
+  margin-right: 1rem;
+  text-align: center;
+}
+
 }
 

@@ -4,7 +4,7 @@
 
    const Contact = () => {
      return (
-       <footer className="bg-gray-100 p-4">
+       <footer className="bg-white/10 p-4">
          <div className="max-w-7xl mx-auto">
            <h3 className="text-lg font-bold mb-4">Contact Me</h3>
            <p className='hover:text-green-600'><span className="font-semibold">Phone:</span>  +27 604-158-227</p>
