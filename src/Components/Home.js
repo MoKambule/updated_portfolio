@@ -38,6 +38,7 @@ function Home() {
           />
         </div>
       </div>
+     < IconLinkButton to="/about" label="learn more about me" />
      
     </section>
      <Contact/>

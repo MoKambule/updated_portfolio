@@ -5,6 +5,7 @@ import IntroCoding from '../Assets/Certificates/introductionToCoding.png';
 import Responsive from '../Assets/Certificates/ResponviWebDev.png';
 import VA from '../Assets/Certificates/virtualAssistance.png';
 import WebDev from '../Assets/Certificates/WebDev.png';
+import { IconLinkButton } from "./LinkButton";
 
 
 
@@ -104,6 +105,7 @@ function Certificates() {
           />
         ))}
       </div>
+      < IconLinkButton to="/" label="Back Home" />
     </section>
   );
 }

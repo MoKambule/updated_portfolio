@@ -1,4 +1,5 @@
 import React from "react";
+import { IconLinkButton } from "./LinkButton";
 
 function About() {
    const skillsAndLanguages = [
@@ -14,7 +15,7 @@ function About() {
 
   return (
   <div className="max-w-4xl mx-auto p-8">
-  <h1 className="text-3xl font-bold mb-8 text-center">About Me & Skills</h1>
+  <h1 className="text-3xl text-white font-bold mb-8 text-center">More about me and what I offer</h1>
 
   <ul className="relative border-l-2 border-gray-300 ml-6">
     {/* About Me */}
@@ -26,10 +27,11 @@ function About() {
       <div className="bg-white/5 shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
         <h2 className="text-xl font-semibold mb-2 text-white">About Me</h2>
         <p className="text-white">
-          I am a creative at heart, especially passionate about anything that involves being behind a lens and telling stories through images. 
-          Working with people and collaborating in team environments is something I truly enjoy. 
-          Most recently, I completed a Software Engineering Occupational Certificate in a peer-to-peer learning environment, 
-          which strengthened my communication, teamwork, and problem-solving skills.
+          I am an aspiring front-end developer with experience in Java, Python, JavaScript, React, HTML, CSS, and Node.js.
+            I have also looked into MongoDB for backend integration. My current interests include learning C# and
+            expanding my knowledge of software quality assurance (QA). I've been a student at WeThinkCode for almost
+            a year, and my projects at the institution have mostly focused on object-oriented programming (OOP) and
+            Java client-server architecture.
         </p>
       </div>
     </li>
@@ -89,7 +91,9 @@ function About() {
       </div>
     </li>
   </ul>
+  < IconLinkButton to="/certificates" label="My Cerficates" />
 </div>
+
 
 
   );
