@@ -34,13 +34,23 @@ function Certificates() {
       <div className="relative w-72 h-80 flex items-center justify-center">
         
         {/* Left button */}
-        <button
-          onClick={prevCard}
-className="absolute -left-80 top-1/2 transform -translate-y-1/2 bg-black text-white px-3 py-1 rounded-full shadow hover:bg-gray-800 disabled:opacity-50"
-          disabled={currentIndex === 0}
-        >
-          ◀
-        </button>
+<button
+  onClick={prevCard}
+  className="
+     absolute
+    left-2 sm:left-4 md:-left-16 lg:-left-20 xl:-left-80
+    top-1/2 -translate-y-1/2
+    z-50
+    bg-white/5 text-white
+    px-3 py-1 rounded-full shadow
+    hover:bg-gray-800
+    disabled:opacity-50
+  "
+  disabled={currentIndex === 0}
+>
+  ◀
+</button>
+
 
         {/* Carousel container */}
 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-100 h-full overflow-hidden rounded-lg bg-white/10 backdrop-blur-sm shadow-md flex items-center justify-center">
@@ -67,7 +77,15 @@ className="absolute -left-80 top-1/2 transform -translate-y-1/2 bg-black text-wh
         {/* Right button */}
         <button
           onClick={nextCard}
-className="absolute -right-80 top-1/2 transform -translate-y-1/2 bg-black text-white px-3 py-1 rounded-full shadow hover:bg-gray-800 disabled:opacity-50"
+  className="
+    absolute 
+    right-2 sm:right-4 md:-right-16 lg:-right-20 xl:-right-80
+    top-1/2 -translate-y-1/2
+    bg-white/10 text-white
+    px-3 py-1 rounded-full shadow
+    hover:bg-gray-800
+    disabled:opacity-50
+  "
           disabled={currentIndex === certifications.length - 1}
         >
           ▶
