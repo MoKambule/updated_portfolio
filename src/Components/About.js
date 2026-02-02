@@ -2,16 +2,6 @@ import React from "react";
 import { IconLinkButton } from "./LinkButton";
 
 function About() {
-   const skillsAndLanguages = [
-    "Java",
-    "Python",
-    "JavaScript",
-    "React",
-    "HTML",
-    "CSS",
-    "C#",
-    "QA Testing",
-  ];
 
   return (
   <div className="max-w-4xl mx-auto p-8">
