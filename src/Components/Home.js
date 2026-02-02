@@ -16,9 +16,10 @@ function Home() {
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-4">
         {/* About Me Text */}
         <div className="text-center md:text-left">
-         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white    pr-5 text-black">
+  <h1 className="text-4xl md:text-5xl font-bold mb-4  text-white ">
   Hi, I'm Mokgethwa Kambule
 </h1>
+
 
           <p className="text-gray-800 text-lg md:text-xl leading-relaxed max-w-md text-white">
          I am a creative at heart, especially passionate about anything that involves 
